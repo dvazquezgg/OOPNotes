@@ -1,6 +1,6 @@
-package library;
+package old;
 
-public class OldMember {
+public class Member {
 
     private String name;
     private int ID;
@@ -8,7 +8,7 @@ public class OldMember {
     private int bookCount;
     private static final int MAX_BOOKS = 5;
 
-    public OldMember(String name, int ID) {
+    public Member(String name, int ID) {
         this.name = name;
         this.ID = ID;
         this.borrowedBooks = new Book[MAX_BOOKS];

@@ -1,18 +1,18 @@
-package library;
+package old;
 
 import java.util.ArrayList;
 
 public class Library {
 
     private ArrayList<Book> bookCollection;
-    private ArrayList<OldMember> members;
+    private ArrayList<Member> members;
 
     public Library(){
         this.bookCollection = new ArrayList<>();
         this.members = new ArrayList<>();
     }
 
-    public Library(ArrayList<Book> bookCollection, ArrayList<OldMember> members) {
+    public Library(ArrayList<Book> bookCollection, ArrayList<Member> members) {
         this.bookCollection = bookCollection;
         this.members = members;
     }
@@ -37,7 +37,7 @@ public class Library {
         }
         return null;
     }
-    public void registerMember(OldMember member){
+    public void registerMember(Member member){
         this.members.add(member);
     }
 }
